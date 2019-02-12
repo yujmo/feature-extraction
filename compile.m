@@ -8,7 +8,7 @@ function compile()
 %   Advances in Neural Information Processing Systems (NIPS) 2012
 %
 
-mex util/pixelwise_hog31.cc '-outdir' 'util/';
-mex features/ssim/vggSsim/MEXfindnearestl2.cpp '-outdir' 'features/ssim/vggSsim/';
-mex features/ssim/vggSsim/mexFindSimMaps.cpp '-outdir' 'features/ssim/vggSsim/';
-mex features/ssim/vggSsim/MEXkmeans_faster2.cpp '-outdir' 'features/ssim/vggSsim/';
+mex -compatibleArrayDims util/pixelwise_hog31.cc '-outdir' 'util/';
+mex -compatibleArrayDims features/ssim/vggSsim/MEXfindnearestl2.cpp '-outdir' 'features/ssim/vggSsim/';
+mex -compatibleArrayDims features/ssim/vggSsim/mexFindSimMaps.cpp '-outdir' 'features/ssim/vggSsim/';
+mex -compatibleArrayDims features/ssim/vggSsim/MEXkmeans_faster2.cpp '-outdir' 'features/ssim/vggSsim/';
